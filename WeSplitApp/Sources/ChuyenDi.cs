@@ -10,6 +10,7 @@ namespace WeSplitApp.Sources
     {
         public string maCD { get; set; }
         public string tenCD { get; set; }
+        public string urlImage { get; set; }
         public string loTrinh { get; set; }
         public string tinhTrang { get; set; }
     }

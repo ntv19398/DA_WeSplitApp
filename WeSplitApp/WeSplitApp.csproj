@@ -70,6 +70,24 @@
     <Compile Include="GUI\Search.Designer.cs">
       <DependentUpon>Search.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\UpdateDiaDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\UpdateDiaDiem.Designer.cs">
+      <DependentUpon>UpdateDiaDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UpdateThanhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\UpdateThanhVien.Designer.cs">
+      <DependentUpon>UpdateThanhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UpdateThuChi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\UpdateThuChi.Designer.cs">
+      <DependentUpon>UpdateThuChi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sources\ChuyenDi.cs" />
@@ -77,8 +95,26 @@
     <Compile Include="Sources\DiaDiem.cs" />
     <Compile Include="Sources\ThanhVien.cs" />
     <Compile Include="Sources\ThuChi.cs" />
+    <EmbeddedResource Include="GUI\CreateJourney.resx">
+      <DependentUpon>CreateJourney.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Detail.resx">
+      <DependentUpon>Detail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\HomeScreen.resx">
       <DependentUpon>HomeScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UpdateDiaDiem.resx">
+      <DependentUpon>UpdateDiaDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UpdateThanhVien.resx">
+      <DependentUpon>UpdateThanhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UpdateThuChi.resx">
+      <DependentUpon>UpdateThuChi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

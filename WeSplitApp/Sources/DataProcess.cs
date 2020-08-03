@@ -21,8 +21,9 @@ namespace WeSplitApp.Sources
                     string[] element = line.ToString().Split(new string[] { "\t" }, StringSplitOptions.None);
                     cd.maCD = element[0];
                     cd.tenCD = element[1];
-                    cd.loTrinh = element[2];
-                    cd.tinhTrang = element[3];
+                    cd.urlImage = element[2];
+                    cd.loTrinh = element[3];
+                    cd.tinhTrang = element[4];
                     lstChuyenDi.Add(cd);
                 }
             }
@@ -51,7 +52,7 @@ namespace WeSplitApp.Sources
         {
             List<ThanhVien> lstThanhVien = new List<ThanhVien>();
             string line;
-            using (var file = new StreamReader("DiaDiem.txt"))
+            using (var file = new StreamReader("ThanhVien.txt"))
             {
                 while ((line = file.ReadLine()) != null)
                 {
@@ -69,7 +70,7 @@ namespace WeSplitApp.Sources
         {
             List<ThuChi> lstThuChi = new List<ThuChi>();
             string line;
-            using (var file = new StreamReader("DiaDiem.txt"))
+            using (var file = new StreamReader("ThuChi.txt"))
             {
                 while ((line = file.ReadLine()) != null)
                 {
