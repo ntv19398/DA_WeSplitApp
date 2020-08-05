@@ -175,6 +175,7 @@
             this.Name = "frmUpdateThanhVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UpdateThanhVien";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmUpdateThanhVien_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.dgvThanhVien)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

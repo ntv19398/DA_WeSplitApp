@@ -1,2 +1,4 @@
 CD01	DD01	Thăm Làng Việt Hải
 CD01	DD02	Chèo Kayak khám phá Lan Hạ
+CD01	DD05	Chèo Kayak khám phá Lan Hạ
+CD01	DD03	Chèo Kayak khám phá Lan Hạ
