@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -78,6 +79,14 @@ namespace WeSplitApp.GUI
             dd.tenDD = txtTenDD.Text.ToString();
             lstDiaDiem.Add(dd);
             LoadFormUpdateDiaDiem();
+            using (var file = new StreamWriter("DiaDiem.txt"))
+            {
+                for (int i = 0; i < lstDiaDiem.Count; i++)
+                {
+                    string str = lstDiaDiem[i].maCD + "\t" + lstDiaDiem[i].maDD + "\t" + lstDiaDiem[i].tenDD;
+                    file.WriteLine(str);
+                }
+            }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -89,6 +98,14 @@ namespace WeSplitApp.GUI
                     lstDiaDiem.Remove(lstDiaDiem[i]);
                 }
                 LoadFormUpdateDiaDiem();
+            }
+            using (var file = new StreamWriter("DiaDiem.txt"))
+            {
+                for (int i = 0; i < lstDiaDiem.Count; i++)
+                {
+                    string str = lstDiaDiem[i].maCD + "\t" + lstDiaDiem[i].maDD + "\t" + lstDiaDiem[i].tenDD;
+                    file.WriteLine(str);
+                }
             }
         }
 
@@ -102,7 +119,19 @@ namespace WeSplitApp.GUI
                 }
                 LoadFormUpdateDiaDiem();
             }
+            using (var file = new StreamWriter("DiaDiem.txt"))
+            {
+                for (int i = 0; i < lstDiaDiem.Count; i++)
+                {
+                    string str = lstDiaDiem[i].maCD + "\t" + lstDiaDiem[i].maDD + "\t" + lstDiaDiem[i].tenDD;
+                    file.WriteLine(str);
+                }
+            }
         }
 
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

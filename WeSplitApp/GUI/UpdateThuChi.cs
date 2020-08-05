@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -80,6 +81,14 @@ namespace WeSplitApp.GUI
             tc.soTien = Int32.Parse(txtSoTien.Text.ToString());
             lstThuChi.Add(tc);
             LoadFormUpdateThuChi();
+            using (var file = new StreamWriter("ThuChi.txt"))
+            {
+                for (int i = 0; i < lstThuChi.Count; i++)
+                {
+                    string str = lstThuChi[i].maCD + "\t" + lstThuChi[i].maTC + "\t" + lstThuChi[i].tenKhoanThu + "\t" + lstThuChi[i].soTien.ToString();
+                    file.WriteLine(str);
+                }
+            }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -91,6 +100,14 @@ namespace WeSplitApp.GUI
                     lstThuChi.Remove(lstThuChi[i]);
                 }
                 LoadFormUpdateThuChi();
+            }
+            using (var file = new StreamWriter("ThuChi.txt"))
+            {
+                for (int i = 0; i < lstThuChi.Count; i++)
+                {
+                    string str = lstThuChi[i].maCD + "\t" + lstThuChi[i].maTC + "\t" + lstThuChi[i].tenKhoanThu + "\t" + lstThuChi[i].soTien.ToString();
+                    file.WriteLine(str);
+                }
             }
         }
 
@@ -104,6 +121,14 @@ namespace WeSplitApp.GUI
                     lstThuChi[i].soTien = Int32.Parse(txtSoTien.Text.ToString());
                 }
                 LoadFormUpdateThuChi();
+            }
+            using (var file = new StreamWriter("ThuChi.txt"))
+            {
+                for (int i = 0; i < lstThuChi.Count; i++)
+                {
+                    string str = lstThuChi[i].maCD + "\t" + lstThuChi[i].maTC + "\t" + lstThuChi[i].tenKhoanThu + "\t" + lstThuChi[i].soTien.ToString();
+                    file.WriteLine(str);
+                }
             }
         }
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -68,6 +69,14 @@ namespace WeSplitApp.GUI
             tv.tenTV = txtTenTV.Text.ToString();
             lstThanhVien.Add(tv);
             LoadFormUpdateThanhVien();
+            using (var file = new StreamWriter("ThanhVien.txt"))
+            {
+                for(int i = 0; i < lstThanhVien.Count; i++)
+                {
+                    string str = lstThanhVien[i].maCD + "\t" + lstThanhVien[i].maTV + "\t" + lstThanhVien[i].tenTV;
+                    file.WriteLine(str);
+                }
+            }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -80,6 +89,14 @@ namespace WeSplitApp.GUI
                 }
                 LoadFormUpdateThanhVien();
             }
+            using (var file = new StreamWriter("ThanhVien.txt"))
+            {
+                for (int i = 0; i < lstThanhVien.Count; i++)
+                {
+                    string str = lstThanhVien[i].maCD + "\t" + lstThanhVien[i].maTV + "\t" + lstThanhVien[i].tenTV;
+                    file.WriteLine(str);
+                }
+            }
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -91,6 +108,14 @@ namespace WeSplitApp.GUI
                     lstThanhVien[i].tenTV = txtTenTV.Text.ToString();
                 }
                 LoadFormUpdateThanhVien();
+            }
+            using (var file = new StreamWriter("ThanhVien.txt"))
+            {
+                for (int i = 0; i < lstThanhVien.Count; i++)
+                {
+                    string str = lstThanhVien[i].maCD + "\t" + lstThanhVien[i].maTV + "\t" + lstThanhVien[i].tenTV;
+                    file.WriteLine(str);
+                }
             }
         }
 

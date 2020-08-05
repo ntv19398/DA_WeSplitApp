@@ -7,3 +7,4 @@ CD01	TV06	Nguyễn Thị Mỹ Diễm
 CD01	TV07	Trần Thị Huyền Trang
 CD01	TV08	Nguyễn Thị Diệu
 CD01	TV09	Nguyễn Thị Minh Thư
+CD01	TV02	Trần Quốc Toàn

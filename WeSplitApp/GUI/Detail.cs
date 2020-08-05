@@ -20,7 +20,7 @@ namespace WeSplitApp.GUI
         /// <summary>
         /// Danh sách Thành viên của chuyến đi
         /// </summary>
-        private List<ThanhVien> lstThanhVien = new List<ThanhVien>();
+        private List<ThanhVien> lstThanhVien =  DataProcess.getListThanhVien();
         /// <summary>
         /// Danh sách địa điểm của chuyến đi
         /// </summary>
@@ -34,7 +34,6 @@ namespace WeSplitApp.GUI
         {
             InitializeComponent();
             lstCD = DataProcess.getListChuyenDi();
-            lstThanhVien = DataProcess.getListThanhVien();
             lstDiaDiem = DataProcess.getListDiaDiem();
             lstThuChi = DataProcess.getListThuChi();
             maCD = name;
