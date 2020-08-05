@@ -1,0 +1,8 @@
+CD01	TC02	Cano cao tốc Bến Bèo - Bè Vạn Bội 2 chiều	1350000
+CD01	TC03	Vé thắng cảnh Vịnh Lan Hạ	3600000
+CD01	TC04	Ăn sáng	450000
+CD01	TC05	Ăn chính	1800000
+CD01	TC06	Thuê kayak	450000
+CD01	TC07	Ngủ đêm	1080000
+CD01	TC08	Chi phí khác (nước suối, găng tay, hoa quả, bánh kẹo, dự phòng)	360000
+CD01	TC09	Cano cao tốc Bến Bèo - Bè Vạn Bội 2 chiều	1350000
