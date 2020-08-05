@@ -31,6 +31,7 @@ namespace WeSplitApp.GUI
             lstDiaDiem = DataProcess.getListDiaDiem();
             lbTitle.Text = "Cập nhật danh sách Địa điểm";
             LoadFormUpdateDiaDiem();
+            dgvDiaDiem.RowHeadersVisible = false;
         }
         /// <summary>
         /// Hàm load form Update Địa điểm
@@ -74,26 +75,38 @@ namespace WeSplitApp.GUI
         private void btnAdd_Click(object sender, EventArgs e)
         {
             DiaDiem dd = new DiaDiem();
+            bool check = true;
             dd.maCD = txtMaCD.Text.ToString();
             dd.maDD = txtMaDD.Text.ToString();
             dd.tenDD = txtTenDD.Text.ToString();
-            lstDiaDiem.Add(dd);
-            LoadFormUpdateDiaDiem();
-            using (var file = new StreamWriter("DiaDiem.txt"))
+            for (int i = 0; i < lstDiaDiem.Count; i++)
             {
-                for (int i = 0; i < lstDiaDiem.Count; i++)
+                if (lstDiaDiem[i].maDD == dd.maDD && lstDiaDiem[i].maCD == dd.maCD)
                 {
-                    string str = lstDiaDiem[i].maCD + "\t" + lstDiaDiem[i].maDD + "\t" + lstDiaDiem[i].tenDD;
-                    file.WriteLine(str);
+                    MessageBox.Show("Mã địa điểm bị trùng", "Thông báo");
+                    check = false;
+                }
+            }
+            if (check == true)
+            {
+                lstDiaDiem.Add(dd);
+                LoadFormUpdateDiaDiem();
+                using (var file = new StreamWriter("DiaDiem.txt"))
+                {
+                    for (int i = 0; i < lstDiaDiem.Count; i++)
+                    {
+                        string str = lstDiaDiem[i].maCD + "\t" + lstDiaDiem[i].maDD + "\t" + lstDiaDiem[i].tenDD;
+                        file.WriteLine(str);
+                    }
                 }
             }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            for(int i = 0; i < lstDiaDiem.Count; i++)
+            for (int i = 0; i < lstDiaDiem.Count; i++)
             {
-                if(lstDiaDiem[i].maCD == txtMaCD.Text.ToString() && lstDiaDiem[i].maDD == txtMaDD.Text.ToString())
+                if (lstDiaDiem[i].maCD == txtMaCD.Text.ToString() && lstDiaDiem[i].maDD == txtMaDD.Text.ToString())
                 {
                     lstDiaDiem.Remove(lstDiaDiem[i]);
                 }
@@ -131,7 +144,16 @@ namespace WeSplitApp.GUI
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frmDetail frm = new frmDetail(_macd);
+            frm.Show();
+            this.Hide();
+        }
+
+        private void frmUpdateDiaDiem_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            frmDetail frm = new frmDetail(_macd);
+            frm.Show();
+            this.Hide();
         }
     }
 }

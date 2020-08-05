@@ -42,6 +42,7 @@ namespace WeSplitApp.GUI
             List<ThanhVien> lstTVCD = new List<ThanhVien>();
             lstTVCD = getListTV();
             dgvThanhVien.DataSource = lstTVCD;
+            dgvThanhVien.RowHeadersVisible = false;
         }
         /// <summary>
         /// Lấy danh sách thành viên của chuyến đi cần xem chi tiết
@@ -63,18 +64,31 @@ namespace WeSplitApp.GUI
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            bool check = true;
             ThanhVien tv = new ThanhVien();
             tv.maCD = txtMaCD.Text.ToString();
             tv.maTV = txtMaTV.Text.ToString();
             tv.tenTV = txtTenTV.Text.ToString();
-            lstThanhVien.Add(tv);
-            LoadFormUpdateThanhVien();
-            using (var file = new StreamWriter("ThanhVien.txt"))
+            for (int i = 0; i < lstThanhVien.Count; i++)
             {
-                for(int i = 0; i < lstThanhVien.Count; i++)
+                if (lstThanhVien[i].maTV == tv.maTV && lstThanhVien[i].maCD == tv.maCD)
                 {
-                    string str = lstThanhVien[i].maCD + "\t" + lstThanhVien[i].maTV + "\t" + lstThanhVien[i].tenTV;
-                    file.WriteLine(str);
+                    MessageBox.Show("Mã thành viên bị trùng", "Thông báo");
+                    check = false;
+                    break;
+                }
+            }
+            if (check == true)
+            {
+                lstThanhVien.Add(tv);
+                LoadFormUpdateThanhVien();
+                using (var file = new StreamWriter("ThanhVien.txt"))
+                {
+                    for (int i = 0; i < lstThanhVien.Count; i++)
+                    {
+                        string str = lstThanhVien[i].maCD + "\t" + lstThanhVien[i].maTV + "\t" + lstThanhVien[i].tenTV;
+                        file.WriteLine(str);
+                    }
                 }
             }
         }
@@ -132,7 +146,16 @@ namespace WeSplitApp.GUI
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frmDetail frm = new frmDetail(_macd);
+            frm.Show();
+            this.Hide();
+        }
+
+        private void frmUpdateThanhVien_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            frmDetail frm = new frmDetail(_macd);
+            frm.Show();
+            this.Hide();
         }
     }
 }

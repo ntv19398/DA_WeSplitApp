@@ -41,6 +41,7 @@ namespace WeSplitApp.GUI
             lstTCCD = getListTC();
             lbTitle.Text = "Cập nhật danh sách các khoản thu chi";
             dgvThuChi.DataSource = lstTCCD;
+            dgvThuChi.RowHeadersVisible = false;
         }
         /// <summary>
         /// Lấy danh sách thu chu của chuyến đi cần xem chi tiết
@@ -75,20 +76,34 @@ namespace WeSplitApp.GUI
         private void btnAdd_Click(object sender, EventArgs e)
         {
             ThuChi tc = new ThuChi();
+            bool check = true;
             tc.maCD = txtMaCD.Text.ToString();
             tc.maTC = txtMaTC.Text.ToString();
             tc.tenKhoanThu = txtTenKhoanThu.Text.ToString();
             tc.soTien = Int32.Parse(txtSoTien.Text.ToString());
-            lstThuChi.Add(tc);
-            LoadFormUpdateThuChi();
-            using (var file = new StreamWriter("ThuChi.txt"))
+            for (int i = 0; i < lstThuChi.Count; i++)
             {
-                for (int i = 0; i < lstThuChi.Count; i++)
+                if (lstThuChi[i].maTC == tc.maTC && lstThuChi[i].maCD == tc.maCD)
                 {
-                    string str = lstThuChi[i].maCD + "\t" + lstThuChi[i].maTC + "\t" + lstThuChi[i].tenKhoanThu + "\t" + lstThuChi[i].soTien.ToString();
-                    file.WriteLine(str);
+                    MessageBox.Show("Mã thu chi bị trùng", "Thông báo");
+                    check = false;
+                    break;
                 }
             }
+            if (check == true)
+            {
+                lstThuChi.Add(tc);
+                LoadFormUpdateThuChi();
+                using (var file = new StreamWriter("ThuChi.txt"))
+                {
+                    for (int i = 0; i < lstThuChi.Count; i++)
+                    {
+                        string str = lstThuChi[i].maCD + "\t" + lstThuChi[i].maTC + "\t" + lstThuChi[i].tenKhoanThu + "\t" + lstThuChi[i].soTien.ToString();
+                        file.WriteLine(str);
+                    }
+                }
+            }
+
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -134,7 +149,16 @@ namespace WeSplitApp.GUI
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frmDetail frm = new frmDetail(_macd);
+            frm.Show();
+            this.Hide();
+        }
+
+        private void frmUpdateThuChi_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            frmDetail frm = new frmDetail(_macd);
+            frm.Show();
+            this.Hide();
         }
     }
 }

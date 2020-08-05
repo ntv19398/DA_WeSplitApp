@@ -20,7 +20,7 @@ namespace WeSplitApp.GUI
         /// <summary>
         /// Danh sách Thành viên của chuyến đi
         /// </summary>
-        private List<ThanhVien> lstThanhVien =  DataProcess.getListThanhVien();
+        private List<ThanhVien> lstThanhVien = DataProcess.getListThanhVien();
         /// <summary>
         /// Danh sách địa điểm của chuyến đi
         /// </summary>
@@ -45,7 +45,7 @@ namespace WeSplitApp.GUI
         /// <param name="maCD"></param>
         private void LoadFormDetail(string maCD)
         {
-            
+
             List<ThanhVien> lstTVCD = new List<ThanhVien>();
             List<DiaDiem> lstDDCD = new List<DiaDiem>();
             List<ThuChi> lstTCCD = new List<ThuChi>();
@@ -87,9 +87,9 @@ namespace WeSplitApp.GUI
         private List<DiaDiem> getListDD()
         {
             List<DiaDiem> lstDDCD = new List<DiaDiem>();
-            for(int i = 0; i < lstDiaDiem.Count; i++)
+            for (int i = 0; i < lstDiaDiem.Count; i++)
             {
-                if(lstDiaDiem[i].maCD == maCD)
+                if (lstDiaDiem[i].maCD == maCD)
                 {
                     lstDDCD.Add(lstDiaDiem[i]);
                 }
@@ -104,9 +104,9 @@ namespace WeSplitApp.GUI
         private List<ThuChi> getListTC()
         {
             List<ThuChi> lstTCCD = new List<ThuChi>();
-            for(int i = 0; i < lstThuChi.Count; i++)
+            for (int i = 0; i < lstThuChi.Count; i++)
             {
-                if(lstThuChi[i].maCD == maCD)
+                if (lstThuChi[i].maCD == maCD)
                 {
                     lstTCCD.Add(lstThuChi[i]);
                 }
@@ -121,7 +121,7 @@ namespace WeSplitApp.GUI
         private string getTenCD()
         {
             string ten = null;
-            for(int i  = 0; i < lstCD.Count; i++)
+            for (int i = 0; i < lstCD.Count; i++)
             {
                 if (lstCD[i].maCD == maCD)
                 {
@@ -133,7 +133,7 @@ namespace WeSplitApp.GUI
         private int tongTien(List<ThuChi> lstTCCD)
         {
             int tong = 0;
-            for(int i = 0; i < lstTCCD.Count; i++)
+            for (int i = 0; i < lstTCCD.Count; i++)
             {
                 tong += lstTCCD[i].soTien;
             }
@@ -144,18 +144,21 @@ namespace WeSplitApp.GUI
         {
             frmUpdateDiaDiem frm = new frmUpdateDiaDiem(maCD);
             frm.Show();
+            this.Close();
         }
 
         private void btnUpdateThanhVien_Click(object sender, EventArgs e)
         {
             frmUpdateThanhVien frm = new frmUpdateThanhVien(maCD);
             frm.Show();
+            this.Close();
         }
 
         private void btnUpdateThuChi_Click(object sender, EventArgs e)
         {
             frmUpdateThuChi frm = new frmUpdateThuChi(maCD);
             frm.Show();
+            this.Close();
         }
 
         private void btnClose_Click(object sender, EventArgs e)
