@@ -85,5 +85,23 @@ namespace WeSplitApp.Sources
             }
             return lstThuChi;
         }
+        public static List<Splash> getSplash()
+        {
+            List<Splash> lstSplash = new List<Splash>();
+            string line;
+            using (var file = new StreamReader("ThongTin.txt"))
+            {
+                while ((line = file.ReadLine()) != null)
+                {
+                    Splash sp = new Splash();
+                    string[] element = line.ToString().Split(new string[] { "\t" }, StringSplitOptions.None);
+                    sp.id = element[0];
+                    sp.thongTin = element[1];
+                    sp.urlImage = element[2];
+                    lstSplash.Add(sp);
+                }
+            }
+            return lstSplash;
+        }
     }
 }

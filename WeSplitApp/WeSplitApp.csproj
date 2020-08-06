@@ -70,6 +70,12 @@
     <Compile Include="GUI\Search.Designer.cs">
       <DependentUpon>Search.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\UpdateDiaDiem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,7 @@
     <Compile Include="Sources\ChuyenDi.cs" />
     <Compile Include="Sources\DataProcess.cs" />
     <Compile Include="Sources\DiaDiem.cs" />
+    <Compile Include="Sources\Splash.cs" />
     <Compile Include="Sources\ThanhVien.cs" />
     <Compile Include="Sources\ThuChi.cs" />
     <EmbeddedResource Include="GUI\CreateJourney.resx">
@@ -106,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Search.resx">
       <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UpdateDiaDiem.resx">
       <DependentUpon>UpdateDiaDiem.cs</DependentUpon>

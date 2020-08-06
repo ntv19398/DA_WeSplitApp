@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WeSplitApp.Sources;
@@ -23,6 +26,14 @@ namespace WeSplitApp.GUI
         public frmHomeScreen()
         {
             InitializeComponent();
+            string exeFile = (new System.Uri(Assembly.GetEntryAssembly().CodeBase)).AbsolutePath;
+            string exeDir = Path.GetDirectoryName(exeFile);
+            string fullPath = Path.Combine(exeDir, "Off.txt");
+            if(!File.Exists(fullPath))
+            {
+                SplashScreen frm = new SplashScreen();
+                frm.ShowDialog();
+            }
             lstCD = DataProcess.getListChuyenDi();
             LoadButtonDSDangDi();
             LoadButtonDSDaDi();
