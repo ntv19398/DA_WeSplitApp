@@ -201,6 +201,7 @@
             this.Name = "frmUpdateThuChi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UpdateThuChi";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmUpdateThuChi_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.dgvThuChi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -42,6 +42,8 @@ namespace WeSplitApp.GUI
             List<DiaDiem> lstDDCD = new List<DiaDiem>();
             lstDDCD = getListDD();
             dgvDiaDiem.DataSource = lstDDCD;
+            dgvDiaDiem.Columns[1].SortMode = DataGridViewColumnSortMode.Programmatic;
+            dgvDiaDiem.Columns[1].HeaderCell.SortGlyphDirection = SortOrder.Ascending;
         }
         /// <summary>
         /// Lấy danh sách dịa điểm của chuyến đi cần xem chi tiết
