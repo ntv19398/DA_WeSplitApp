@@ -1,1 +1,5 @@
 CD01	Phượt vịnh Lan Hạ	Images\\VinhLanHa.jpg	Hà Nội - Hải Phòng - Cát Bà - Bè Mạnh Nữ	Đang đi
+CD02	Khám phá Đà Nẵng	Images\\DaNang.jpg	Quảng Ngãi - Đà Nẵng	Đã đi
+CD03	Đảo Phú Quốc	Images\\DaoPhuQuoc.jpg	Quảng Ngãi - Đà Nẵng -Phú Quốc	Đã đi
+CD04	Khám há Vũng Tàu	Images\\VungTau.png	Quảng Ngãi - Đà Nẵng - TP HCM - Vũng Tàu	Đang đi
+CD05	Thăm động Phong Nha - Kẻ Bàng	Images\\DongPhongNha.jpg	Quảng Ngãi - Quảng Nam - Đà Nẵng - Huế - Quảng Bình	Đang đi

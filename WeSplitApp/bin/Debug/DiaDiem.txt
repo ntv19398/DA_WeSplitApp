@@ -1,2 +1,21 @@
 CD01	DD01	Thăm Làng Việt Hải
 CD01	DD02	Chèo Kayak khám phá Lan Hạ
+CD02	DD01	Biển Mỹ Khê
+CD02	DD02	Chùa Linh Ứng bãi Bụt
+CD02	DD03	Ngũ Hành Sơn
+CD02	DD04	Cầu Quay sông Hàn
+CD02	DD05	Cầu Rồng
+CD02	DD06	Cầu Vàng – Bà Nà Hills
+CD03	DD01	Cáp treo Hòn Thơm
+CD03	DD02	Làng Chài Hàm Ninh
+CD03	DD03	Chùa Hộ Quốc
+CD03	DD04	Vườn quốc gia Phú Quốc
+CD04	DD01	Tượng chúa Giêsu Kito Vua
+CD04	DD02	Biển Long Hải
+CD04	DD03	Hải đăng Vũng Tàu
+CD04	DD04	Hòn Bà
+CD04	DD05	Đèo nước ngọt
+CD05	DD01	Động Phong Nha
+CD05	DD02	Động Thiên Đường
+CD05	DD03	Sông Chày Hang Tối
+CD05	DD04	Suối Nước Moọc

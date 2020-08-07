@@ -7,3 +7,19 @@ CD01	TC06	Thuê kayak	450000
 CD01	TC07	Ngủ đêm	1080000
 CD01	TC08	Chi phí khác (nước suối, găng tay, hoa quả, bánh kẹo, dự phòng)	360000
 CD01	TC09	Cano cao tốc Bến Bèo - Bè Vạn Bội 2 chiều	1350000
+CD02	TC01	Ăn sáng	450000
+CD02	TC02	Ăn chính	1800000
+CD02	TC03	Vé tham quan Bà Nà Hill	3500000
+CD02	TC04	Khách sạn 3 sao	3000000
+CD02	TC05	Chi phí khác (nước suối, găng tay, hoa quả, bánh kẹo, dự phòng)	360000
+CD03	TC01	Ăn sáng	450000
+CD03	TC02	Ăn chính	1800000
+CD03	TC03	Thuê ca nô ra biển	800000
+CD03	TC04	Chi phí khác (nước suối, găng tay, hoa quả, bánh kẹo, dự phòng)	360000
+CD03	TC05	Khách sạn 3 sao	3000000
+CD04	TC01	Ăn sáng	450000
+CD04	TC02	Ăn chính	1800000
+CD04	TC03	Khách sạn 3 sao	3000000
+CD05	TC01	Ăn sáng	450000
+CD05	TC02	Ăn chính	1800000
+CD05	TC03	Khách sạn 3 sao	3000000

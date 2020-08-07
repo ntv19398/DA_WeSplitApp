@@ -1,0 +1,16 @@
+D:\1660728\LapTrinhWindow\ThucHanh\DA_WeSplitApp\WeSplitApp\bin\Debug\WeSplitApp.exe.config
+D:\1660728\LapTrinhWindow\ThucHanh\DA_WeSplitApp\WeSplitApp\bin\Debug\WeSplitApp.exe
+D:\1660728\LapTrinhWindow\ThucHanh\DA_WeSplitApp\WeSplitApp\bin\Debug\WeSplitApp.pdb
+D:\1660728\LapTrinhWindow\ThucHanh\DA_WeSplitApp\WeSplitApp\obj\Debug\WeSplitApp.csprojAssemblyReference.cache
+D:\1660728\LapTrinhWindow\ThucHanh\DA_WeSplitApp\WeSplitApp\obj\Debug\WeSplitApp.GUI.frmDetail.resources
+D:\1660728\LapTrinhWindow\ThucHanh\DA_WeSplitApp\WeSplitApp\obj\Debug\WeSplitApp.GUI.frmHomeScreen.resources
+D:\1660728\LapTrinhWindow\ThucHanh\DA_WeSplitApp\WeSplitApp\obj\Debug\WeSplitApp.GUI.frmSearch.resources
+D:\1660728\LapTrinhWindow\ThucHanh\DA_WeSplitApp\WeSplitApp\obj\Debug\WeSplitApp.GUI.frmUpdateDiaDiem.resources
+D:\1660728\LapTrinhWindow\ThucHanh\DA_WeSplitApp\WeSplitApp\obj\Debug\WeSplitApp.GUI.frmUpdateThanhVien.resources
+D:\1660728\LapTrinhWindow\ThucHanh\DA_WeSplitApp\WeSplitApp\obj\Debug\WeSplitApp.GUI.frmUpdateThuChi.resources
+D:\1660728\LapTrinhWindow\ThucHanh\DA_WeSplitApp\WeSplitApp\obj\Debug\WeSplitApp.Properties.Resources.resources
+D:\1660728\LapTrinhWindow\ThucHanh\DA_WeSplitApp\WeSplitApp\obj\Debug\WeSplitApp.csproj.GenerateResource.cache
+D:\1660728\LapTrinhWindow\ThucHanh\DA_WeSplitApp\WeSplitApp\obj\Debug\WeSplitApp.csproj.CoreCompileInputs.cache
+D:\1660728\LapTrinhWindow\ThucHanh\DA_WeSplitApp\WeSplitApp\obj\Debug\WeSplitApp.exe
+D:\1660728\LapTrinhWindow\ThucHanh\DA_WeSplitApp\WeSplitApp\obj\Debug\WeSplitApp.pdb
+D:\1660728\LapTrinhWindow\ThucHanh\DA_WeSplitApp\WeSplitApp\obj\Debug\WeSplitApp.GUI.frmCreateJourney.resources

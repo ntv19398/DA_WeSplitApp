@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WeSplitApp.GUI
 {
-    public partial class CreateJourney : Form
+    public partial class frmCreateJourney : Form
     {
-        public CreateJourney()
+        public frmCreateJourney()
         {
             InitializeComponent();
         }

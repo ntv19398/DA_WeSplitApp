@@ -1,10 +1,24 @@
 CD01	TV01	Nguyễn Thanh Vinh
-CD01	TV02	Trần Quốc Toàn
 CD01	TV03	Phạm Văn Mạnh
 CD01	TV04	Nguyễn Hữu Nghĩa
 CD01	TV05	Hoàng Quỳnh Hương
-CD01	TV06	Nguyễn Thị Mỹ Diễm
-CD01	TV07	Trần Thị Huyền Trang
-CD01	TV08	Nguyễn Thị Diệu
-CD01	TV09	Nguyễn Thị Minh Thư
-CD01	TV02	Trần Quốc Toàn
+CD02	TV01	Nguyễn Thị Mỹ Diễm
+CD02	TV02	Trần Thị Huyền Trang
+CD02	TV03	Nguyễn Thị Diệu
+CD02	TV04	Nguyễn Thị Minh Thư
+CD02	TV15	Phạm Hoàng Anh
+CD03	TV01	Nguyễn Hữu Phát
+CD03	TV02	Võ Thị Ngọc Anh
+CD03	TV03	Nguyễn Như Quỳnh
+CD03	TV04	Phạm Nguyễn Anh Thư
+CD03	TV05	Lưu Văn Tuân
+CD04	TV01	Phạm Băng Băng
+CD04	TV02	Nguyễn Võ Ngọc Trân
+CD04	TV03	Thái Công Danh
+CD04	TV04	Đoàn Dự
+CD04	TV05	Doãn Chí Bình
+CD05	TV01	Tiểu Long Nữ
+CD05	TV02	Cristiano Rolnando
+CD05	TV03	Leoni Messi
+CD05	TV04	Nhậm Doanh Doanh
+CD05	TV05	Lệnh Hồ Xung

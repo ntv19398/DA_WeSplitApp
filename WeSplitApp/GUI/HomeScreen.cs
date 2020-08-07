@@ -60,7 +60,7 @@ namespace WeSplitApp.GUI
                 if (lstCD[i].tinhTrang == "Đã đi")
                 {
                     Button btn = addButton(lstCD[i].maCD, lstCD[i].tenCD, lstCD[i].urlImage);
-                    flpDSDangDi.Controls.Add(btn);
+                    flpDSDaDi.Controls.Add(btn);
                     btn.Click += new System.EventHandler(this.button_Click);
                 }
             }
@@ -102,7 +102,8 @@ namespace WeSplitApp.GUI
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-
+            frmCreateJourney frm = new frmCreateJourney();
+            frm.Show();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
