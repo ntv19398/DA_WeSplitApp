@@ -30,7 +30,7 @@ namespace WeSplitApp.GUI
             Random r = new Random();
             int random = r.Next(0, 5);
             Image image = Image.FromFile(lstSplash[random].urlImage);
-            Image img = resizeImage(image, 115, 120);
+            Image img = resizeImage(image, 585, 279);
             panel1.BackgroundImage = img;
             lblthongtin.Text = lstSplash[random].thongTin;
         }

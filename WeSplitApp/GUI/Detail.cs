@@ -165,5 +165,12 @@ namespace WeSplitApp.GUI
         {
             this.Close();
         }
+
+        private void btnListImages_Click(object sender, EventArgs e)
+        {
+            frmImages frm = new frmImages(maCD);
+            frm.Show();
+            this.Close();
+        }
     }
 }

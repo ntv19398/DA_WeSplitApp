@@ -105,6 +105,8 @@
             // 
             // btnAdd
             // 
+            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.btnAdd.Location = new System.Drawing.Point(360, 23);
@@ -118,9 +120,9 @@
             // btnSearch
             // 
             this.btnSearch.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnSearch.Location = new System.Drawing.Point(980, 26);
+            this.btnSearch.Location = new System.Drawing.Point(980, 23);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.Size = new System.Drawing.Size(75, 26);
             this.btnSearch.TabIndex = 4;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -170,6 +172,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1067, 629);
             this.Controls.Add(this.btnPrevDaDi);
             this.Controls.Add(this.btnPrevDangDi);
@@ -186,7 +189,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmHomeScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "We Split App";
+            this.Text = "WeSplit App";
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);

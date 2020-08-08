@@ -58,6 +58,12 @@
     <Compile Include="GUI\Detail.Designer.cs">
       <DependentUpon>Detail.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmImages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmImages.Designer.cs">
+      <DependentUpon>frmImages.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\HomeScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,7 @@
     <Compile Include="Sources\ChuyenDi.cs" />
     <Compile Include="Sources\DataProcess.cs" />
     <Compile Include="Sources\DiaDiem.cs" />
+    <Compile Include="Sources\Img.cs" />
     <Compile Include="Sources\Splash.cs" />
     <Compile Include="Sources\ThanhVien.cs" />
     <Compile Include="Sources\ThuChi.cs" />
@@ -107,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Detail.resx">
       <DependentUpon>Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmImages.resx">
+      <DependentUpon>frmImages.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\HomeScreen.resx">
       <DependentUpon>HomeScreen.cs</DependentUpon>

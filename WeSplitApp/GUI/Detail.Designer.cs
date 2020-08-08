@@ -30,6 +30,8 @@
         {
             this.dgvDSTV = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnListImages = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.lbChuyenDi = new System.Windows.Forms.Label();
             this.txtTienTVDong = new System.Windows.Forms.TextBox();
             this.txtTongChiPhi = new System.Windows.Forms.TextBox();
@@ -43,7 +45,6 @@
             this.dgvDSDD = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnUpdateThanhVien = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSTV)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -68,6 +69,7 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.btnListImages);
             this.panel1.Controls.Add(this.btnClose);
             this.panel1.Controls.Add(this.lbChuyenDi);
             this.panel1.Controls.Add(this.txtTienTVDong);
@@ -81,6 +83,30 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(913, 517);
             this.panel1.TabIndex = 1;
+            // 
+            // btnListImages
+            // 
+            this.btnListImages.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListImages.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btnListImages.Location = new System.Drawing.Point(583, 298);
+            this.btnListImages.Name = "btnListImages";
+            this.btnListImages.Size = new System.Drawing.Size(223, 36);
+            this.btnListImages.TabIndex = 4;
+            this.btnListImages.Text = "Xem danh sách hình ảnh";
+            this.btnListImages.UseVisualStyleBackColor = true;
+            this.btnListImages.Click += new System.EventHandler(this.btnListImages_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btnClose.Location = new System.Drawing.Point(807, 460);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(85, 36);
+            this.btnClose.TabIndex = 4;
+            this.btnClose.Text = "Đóng";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // lbChuyenDi
             // 
@@ -98,7 +124,7 @@
             this.txtTienTVDong.Enabled = false;
             this.txtTienTVDong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTienTVDong.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.txtTienTVDong.Location = new System.Drawing.Point(695, 375);
+            this.txtTienTVDong.Location = new System.Drawing.Point(695, 406);
             this.txtTienTVDong.Name = "txtTienTVDong";
             this.txtTienTVDong.Size = new System.Drawing.Size(209, 21);
             this.txtTienTVDong.TabIndex = 3;
@@ -108,7 +134,7 @@
             this.txtTongChiPhi.Enabled = false;
             this.txtTongChiPhi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTongChiPhi.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.txtTongChiPhi.Location = new System.Drawing.Point(695, 335);
+            this.txtTongChiPhi.Location = new System.Drawing.Point(695, 366);
             this.txtTongChiPhi.Name = "txtTongChiPhi";
             this.txtTongChiPhi.Size = new System.Drawing.Size(209, 21);
             this.txtTongChiPhi.TabIndex = 3;
@@ -116,7 +142,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(529, 366);
+            this.label3.Location = new System.Drawing.Point(529, 397);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(149, 30);
             this.label3.TabIndex = 2;
@@ -125,7 +151,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(529, 338);
+            this.label2.Location = new System.Drawing.Point(529, 369);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(129, 15);
             this.label2.TabIndex = 2;
@@ -224,18 +250,6 @@
             this.btnUpdateThanhVien.UseVisualStyleBackColor = true;
             this.btnUpdateThanhVien.Click += new System.EventHandler(this.btnUpdateThanhVien_Click);
             // 
-            // btnClose
-            // 
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.btnClose.Location = new System.Drawing.Point(807, 460);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(85, 36);
-            this.btnClose.TabIndex = 4;
-            this.btnClose.Text = "Đóng";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
             // frmDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -246,7 +260,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmDetail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "DetailChuyenDi";
+            this.Text = "Chi tiết chuyến đi";
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSTV)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -277,5 +291,6 @@
         private System.Windows.Forms.Button btnUpdateDiaDiem;
         private System.Windows.Forms.Button btnUpdateThanhVien;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnListImages;
     }
 }

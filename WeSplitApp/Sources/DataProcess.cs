@@ -103,5 +103,23 @@ namespace WeSplitApp.Sources
             }
             return lstSplash;
         }
+        public static List<Img> getListImage()
+        {
+            List<Img> lstImage = new List<Img>();
+            string line;
+            using (var file = new StreamReader("Images.txt"))
+            {
+                while ((line = file.ReadLine()) != null)
+                {
+                    Img img = new Img();
+                    string[] element = line.ToString().Split(new string[] { "\t" }, StringSplitOptions.None);
+                    img._maCD = element[0];
+                    img._maImage = element[1];
+                    img._urlImage = element[2];
+                    lstImage.Add(img);
+                }
+            }
+            return lstImage;
+        }
     }
 }
